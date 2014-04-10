@@ -39,27 +39,15 @@
 //   })
 // })
 
-define(
-    function () {
 
-        describe('Utils file module test', function () {
+define([], function() {
 
-            afterEach(function () {
-                $('body').html('');
-            });
+    describe('just checking', function() {
 
-            it('should display alert box', function () {
-                $('.alert-danger').length.should.equal(1);
-            });
-
-        }),
-
-        describe('test TEST', function () {
-
-            it('should return true if 1 == 1', function () {
-                assert.Equal(1, 1);
-            });
-
+        it('works for app', function() {
+            assert.equal('1', '1');
         });
-    }
-);
+
+    });
+
+});
