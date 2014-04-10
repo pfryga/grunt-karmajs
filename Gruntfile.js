@@ -1,40 +1,49 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    less: {
-        options: {
-            paths: []
-        },
-        dynamic_mappings_development: {
+    // Project configuration.
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        less: {
             options: {
-                yuicompress: false,
-                ieCompat: true
+                paths: []
             },
-            files: {}
+            dynamic_mappings_development: {
+                options: {
+                    yuicompress: false,
+                    ieCompat: true
+                },
+                files: {}
+            }
+        },
+        watch: {
+            files: ['<%= less.options.paths %>'],
+            tasks: ['less:dynamic_mappings_development'],
+            options: {
+                spawn: false
+            }
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
+        },
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: ".",
+                    optimize: 'none'
+                }
+            }
         }
-    },
-    watch: {
-        files: ['<%= less.options.paths %>'],
-        tasks: ['less:dynamic_mappings_development'],
-        options: {
-          spawn: false
-        }
-    },
-    karma: {
-      unit: {
-        configFile: 'karma.conf.js'
-      }
-    }
-  });
+    });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-karma');
+    // Load the plugin that provides the "uglify" task.
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
 
-  // Default task(s).
-  grunt.registerTask('default', ['less:dynamic_mappings_development']);
+    // Default task(s).
+    grunt.registerTask('default', ['less:dynamic_mappings_development']);
 
 };
