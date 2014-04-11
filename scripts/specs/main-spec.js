@@ -9,7 +9,7 @@ for (var file in window.__karma__.files) {
 }
 
 requirejs.config({
-    baseUrl: '/base/scripts/specs',
+    baseUrl: '',
     deps: specs,
     callback: function () {
         window.__karma__.start();

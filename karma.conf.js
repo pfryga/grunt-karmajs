@@ -23,6 +23,7 @@ module.exports = function(config) {
       {pattern: 'scripts/specs/**/*Spec.html', included: false},
 
       'scripts/lib/require.js',
+      'scripts/lib/tpl.js',
       'scripts/specs/main-spec.js'
     ],
 
