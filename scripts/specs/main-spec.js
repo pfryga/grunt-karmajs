@@ -11,6 +11,12 @@ for (var file in window.__karma__.files) {
 requirejs.config({
     baseUrl: '',
     deps: specs,
+    paths: {
+        templates: 'templates',
+        underscore: '../../bower_components/underscore/underscore',
+        text: '../../bower_components/requirejs-text/text',
+        tpl: '../../bower_components/requirejs-tpl/tpl'
+    },
     callback: function () {
         window.__karma__.start();
     }

@@ -1,6 +1,6 @@
 define(
 	[
-		'tpl!templates/testSpec.html'
+		'tpl!templates/testSpec'
 	],
 	function(template) {
 		'use strict';
@@ -8,7 +8,6 @@ define(
 
 	        it('works for app', function() {
 	        	var content = document.getElementById('testID').innerHTML;
-	        	// var content = $('#testID p').html();
 	            assert.equal('1', content);
 	        });
 
