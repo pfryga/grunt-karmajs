@@ -11,5 +11,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.11",
+    "requirejs-tpl": "*",
+    "squire": "~0.2.0"
+  }
 }
