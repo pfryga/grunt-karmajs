@@ -15,3 +15,22 @@ define(
 	    });
 
 });
+
+// describe('Functions', function(){
+//   describe('#testFunction()', function() {
+//     it('should return true', function() {
+//       assert.equal(true, true);
+//     })
+//   })
+// })
+
+// define([], function() {
+// 		'use strict';
+// 	    describe('just checking', function() {
+
+// 	        it('works for app', function() {
+// 	            assert.equal('1', 1);
+// 	        });
+
+// 	    });
+// });

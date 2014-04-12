@@ -22,8 +22,8 @@ module.exports = function(config) {
       {pattern: 'scripts/specs/**/*Spec.js', included: false},
       {pattern: 'scripts/specs/**/*Spec.html', included: false},
 
-      'scripts/lib/require.js',
-      'scripts/lib/tpl.js',
+      'bower_components/requirejs/require.js',
+      // 'bower_components/requirejs-tpl/tpl.js',
       'scripts/specs/main-spec.js'
     ],
 
