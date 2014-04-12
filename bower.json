@@ -1,0 +1,15 @@
+{
+  "name": "grunt4",
+  "version": "0.0.0",
+  "authors": [
+    "Piotr Fryga <piotr.fryga@allegro.pl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
