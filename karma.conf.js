@@ -16,13 +16,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       {pattern: 'bower_components/**/*.js', included: false},
-      {pattern: 'scripts/specs/*Spec.js', included: false},
-      {pattern: 'scripts/specs/*Spec.html', included: false},
       {pattern: 'scripts/specs/**/*Spec.js', included: false},
-      {pattern: 'scripts/specs/**/*Spec.html', included: false},
+      // {pattern: 'scripts/specs/**/*Spec.html', included: false},
 
-      'bower_components/requirejs/require.js',
-      // 'bower_components/requirejs-tpl/tpl.js',
       'scripts/specs/main-spec.js'
     ],
 

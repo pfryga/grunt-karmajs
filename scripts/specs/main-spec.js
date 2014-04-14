@@ -3,21 +3,19 @@ var specs = [];
 for (var file in window.__karma__.files) {
     if (window.__karma__.files.hasOwnProperty(file)) {
         if (/Spec\.js$/.test(file)) {
+            console.log('pushing: ' + file);
             specs.push(file);
         }
     }
 }
 
 requirejs.config({
-    baseUrl: '',
-    deps: specs,
+    baseUrl: '/base/script/specs',
     paths: {
-        templates: 'templates',
-        underscore: '../../bower_components/underscore/underscore',
-        text: '../../bower_components/requirejs-text/text',
-        tpl: '../../bower_components/requirejs-tpl/tpl'
+        'jquery': '../../bower_components/jquery/dist/jquery'
     },
+    deps: specs,
     callback: function () {
-        window.__karma__.start();
+        window.__karma__.start()
     }
 });
