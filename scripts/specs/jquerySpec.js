@@ -1,7 +1,7 @@
 define(['jquery'], function (jQuery) {
-    describe('just checking', function() {
+    describe('get jQuery and use', function() {
 
-        it('works for app', function() {
+        it('works for example', function() {
         	var el = document.createElement("div");
         	el.id = "myDiv";
         	document.body.appendChild(el);
