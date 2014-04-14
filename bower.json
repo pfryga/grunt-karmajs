@@ -17,6 +17,7 @@
     "requirejs": "~2.1.11",
     "requirejs-tpl": "*",
     "squire": "~0.2.0",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "requirejs-text": "~2.0.11"
   }
 }
