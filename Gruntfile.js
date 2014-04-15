@@ -31,13 +31,7 @@ module.exports = function(grunt) {
             compile: {
                 options: {
                     baseUrl: ".",
-                    optimize: 'none',
-                    paths: {
-                        'requireLib': 'bower_components//requirejs/require',
-                        'jquery': 'bower_components/jquery/src/jquery',
-                        'tpl': 'bower_components/requirejs-tpl/tpl',
-                        'Squire': 'bower_components/squire/src/Squire'
-                    }
+                    optimize: 'none'
                 }
             }
         }

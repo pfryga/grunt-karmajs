@@ -12,15 +12,9 @@ requirejs.config({
     baseUrl: '/base/scripts/specs',
     paths: {
         'jquery': '../../bower_components/jquery/dist/jquery',
-        'text': '../../bower_components/requirejs-text/text'
-        // 'src': '../src'
+        'text': '../../bower_components/requirejs-text/text',
+        'src': '../../scripts/src'
     },
-    // shim: {
-    //     'core': {
-    //         deps: ['../src/core'],
-    //         exports: 'core'
-    //     }
-    // },
     deps: specs,
     callback: function () {
         window.__karma__.start()
