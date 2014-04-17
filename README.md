@@ -7,3 +7,9 @@ odp: Zaimportować odpowiednią templatkę z kodem HTML za pomocą RequireJS do 
 
 3. Jak testować DOM zgodnie ze strukturą w plikach HTML nie generując kodu (np. bloków HTML) dynamicznie.
 odp: Podobnie jak w pytaniu 1.
+
+
+Pytania ze spotkania 17.04
+
+1. Jak pobierać i używać biblioteki które nie są napisane w sposób modułowy (AMD),
+2. Po przepisaniu np. istoreScripts.js na moduły, jak nie wywołać konfliktu po stronie wywołania i użytkownia kodu.
