@@ -15,6 +15,9 @@ requirejs.config({
         'text': '../../bower_components/requirejs-text/text',
         'src': '../../scripts/src'
     },
+    shim: {
+        'noModuleScript': ['jquery']
+    },
     deps: specs,
     callback: function () {
         window.__karma__.start()
