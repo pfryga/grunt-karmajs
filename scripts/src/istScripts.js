@@ -745,7 +745,7 @@ function checkResolution() {
         device = "desktop";
     }
 
-    return 'tablet';
+    return device;
 }
 
 jQuery( document ).ready(function() {
