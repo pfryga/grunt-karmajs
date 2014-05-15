@@ -1,5 +1,8 @@
 define(['jquery', 'text!templates/noModuleSpec.html', 'src/noModuleScript'], function(jQuery, template) {
 	describe('external no module function', function() {
+        beforeEach(function(){
+            console.log('before next test');
+        });
         it('execute the external function', function() {
             assert.equal(true, returnTrue());
         });
@@ -24,6 +27,9 @@ define(['jquery', 'text!templates/noModuleSpec.html', 'src/noModuleScript'], fun
             assert.equal(termsInfo.hasClass('hidden'), true);
             assert.equal(!(termsInfo.hasClass('hidden')), false);
             assert.equal(exampleSpan.css('display'), 'none');
+        });
+        it('this is still body scope', function() {
+            assert.equal(jQuery('#itemList').find('li').size(), 5);
         });
     });
 });

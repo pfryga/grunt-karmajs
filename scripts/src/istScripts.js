@@ -748,34 +748,34 @@ function checkResolution() {
     return device;
 }
 
-jQuery( document ).ready(function() {
+// jQuery( document ).ready(function() {
 
     /**
      * funkcje wywolywane onload
      */
-    istStripeUl.init();
-    istGallery.init(2);
-    istStars.init();
+    // istStripeUl.init();
+    // istGallery.init(2);
+    // istStars.init();
 	//istAdvSearch.init();
-    istParamCart.init();
+    // istParamCart.init();
 	//setColumnWidths();
 
-    var layoutName = jQuery('body.simple');
-    if (layoutName.length) {
-    	showMenu();
-        if( !(jQuery('html')).hasClass('lt-ie9') ) {
-            enableSimpleHeader();
-        }
-        enableSimpleFooter();
-        enableMyAccountFormHints();
+    // var layoutName = jQuery('body.simple');
+    // if (layoutName.length) {
+    // 	showMenu();
+    //     if( !(jQuery('html')).hasClass('lt-ie9') ) {
+    //         enableSimpleHeader();
+    //     }
+    //     enableSimpleFooter();
+    //     enableMyAccountFormHints();
 
-        jQuery( window ).resize(function() {
-            fitHeader();
-            fitMenu();
-            fitFooter();
-        });
-    }
-});
+    //     jQuery( window ).resize(function() {
+    //         fitHeader();
+    //         fitMenu();
+    //         fitFooter();
+    //     });
+    // }
+// });
 
 
 
