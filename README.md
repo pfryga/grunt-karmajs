@@ -6,7 +6,13 @@ Usage
 
 ### Instalation
 
+Instalacja zasobów `node_modules`
+
 	npm install
+
+Instalacja bibliotek `bower_components`
+
+	bower install
 
 Questions
 -------------
