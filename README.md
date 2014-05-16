@@ -1,4 +1,17 @@
-Pytania ze spotkania 9.04
+Testing Javascript with KarmaJS
+=========
+
+Usage
+-------------
+
+### Instalation
+
+	npm install
+
+Questions
+-------------
+
+### Pytania ze spotkania 9.04
 
 1. Jak otestować funckję która wykonuje operację na DOM.
 odp: Zaimportować odpowiednią templatkę z kodem HTML za pomocą RequireJS do modułu testującego.
@@ -9,7 +22,7 @@ odp: Zaimportować odpowiednią templatkę z kodem HTML za pomocą RequireJS do 
 odp: Podobnie jak w pytaniu 1.
 
 
-Pytania ze spotkania 17.04
+### Pytania ze spotkania 17.04
 
 1. Jak pobierać i używać biblioteki które nie są napisane w sposób modułowy (AMD),
 2. Po przepisaniu np. istoreScripts.js na moduły, jak nie wywołać konfliktu po stronie wywołania i użytkownia kodu.
